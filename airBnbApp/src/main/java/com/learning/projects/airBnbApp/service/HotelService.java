@@ -1,6 +1,7 @@
 package com.learning.projects.airBnbApp.service;
 
 import com.learning.projects.airBnbApp.dto.HotelDto;
+import com.learning.projects.airBnbApp.dto.HotelInfoDto;
 
 public interface HotelService {
     HotelDto createNewHotel(HotelDto hotelDto);
@@ -13,4 +14,5 @@ public interface HotelService {
 
     void activateHotel(Long hotelId);
 
+    HotelInfoDto getHotelInfoById(Long hotelId);
 }
